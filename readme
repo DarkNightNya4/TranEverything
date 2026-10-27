@@ -1,0 +1,56 @@
+# TranEverything
+
+**A modular localization framework for World of Warcraft addons.**
+
+TranEverything is an open-source project aiming to make World of Warcraft addons more accessible across different languages, without modifying the original addon files.
+
+The project is currently in the **early planning and research stage**.
+
+## Project Goals
+
+- **Existing Localization Support** — Activate language resources already included in compatible addons.
+- **Non-Destructive Localization** — Keep additional translations and compatibility adapters separate from original addon files.
+- **Per-Addon Configuration** — Allow users to manage language preferences for individual addons where technically supported.
+- **Community Language Packs** — Support independently maintained language packs distributed through GitHub repositories.
+- **Diagnostics & Compatibility** — Provide tools for identifying localization conflicts and troubleshooting addon issues.
+- **Future AI-Assisted Translation** — Explore AI-assisted translation after reliable addon framework detection and language resource integration are established.
+
+## Initial Compatibility
+
+The first development target is **World of Warcraft 3.3.5a (Build 12340)**, with initial research focused on AceLocale-based addons.
+
+Support for additional WoW versions and localization frameworks may be introduced later.
+
+## Planned Architecture
+
+```text
+TranEverything/
+├── Core/
+├── Locales/
+├── Adapters/
+├── Sources/
+├── Diagnostics/
+└── UI/
+```
+
+Community translations will be stored separately from the original addons, with the goal of minimizing runtime overhead and preserving addon compatibility.
+
+## Development Status
+
+**Status: Planning / Proof of Concept**
+
+TranEverything is not yet available for general use. Features, architecture, and compatibility are subject to change as development progresses.
+
+## Community & Contributions
+
+The project aims to support an open ecosystem where translators and developers can maintain and distribute their own language packs without needing direct access to the core repository.
+
+Contribution guidelines and language pack specifications will be published as the project develops.
+
+## License
+
+License information will be added before the first public release.
+
+---
+
+*Translate more. Modify less.*
