@@ -2,55 +2,104 @@
 
 **A modular localization framework for World of Warcraft addons.**
 
-TranEverything is an open-source project aiming to make World of Warcraft addons more accessible across different languages, without modifying the original addon files.
+**一个面向《魔兽世界》插件的模块化多语言适配框架。**
 
-The project is currently in the **early planning and research stage**.
+[English](#english) | [简体中文](#简体中文)
 
-## Project Goals
+---
 
-- **Existing Localization Support** — Activate language resources already included in compatible addons.
-- **Non-Destructive Localization** — Keep additional translations and compatibility adapters separate from original addon files.
-- **Per-Addon Configuration** — Allow users to manage language preferences for individual addons where technically supported.
-- **Community Language Packs** — Support independently maintained language packs distributed through GitHub repositories.
-- **Diagnostics & Compatibility** — Provide tools for identifying localization conflicts and troubleshooting addon issues.
-- **Future AI-Assisted Translation** — Explore AI-assisted translation after reliable addon framework detection and language resource integration are established.
+## English
 
-## Initial Compatibility
+### About
 
-The first development target is **World of Warcraft 3.3.5a (Build 12340)**, with initial research focused on AceLocale-based addons.
+TranEverything is an open-source project designed to make World of Warcraft addons accessible in more languages without modifying their original files.
 
-Support for additional WoW versions and localization frameworks may be introduced later.
+The project focuses on activating existing localization resources, supporting independent language packs, and building a community-driven localization ecosystem.
 
-## Planned Architecture
+**Current Status: Planning & Proof of Concept**
 
-```text
-TranEverything/
-├── Core/
-├── Locales/
-├── Adapters/
-├── Sources/
-├── Diagnostics/
-└── UI/
-```
+### Project Goals
 
-Community translations will be stored separately from the original addons, with the goal of minimizing runtime overhead and preserving addon compatibility.
+- **Existing Localizations** — Activate language resources already included in compatible addons.
+- **Non-Destructive Design** — Keep original addon files unchanged.
+- **Per-Addon Configuration** — Support individual language preferences where technically feasible.
+- **Modular Language Packs** — Store translations and compatibility adapters separately.
+- **Community Subscriptions** — Allow users to subscribe to independently maintained GitHub language pack repositories.
+- **Diagnostics** — Provide compatibility checks, error logging, and troubleshooting information.
+- **Low Overhead** — Prioritize lightweight, initialization-time localization over continuous runtime processing.
 
-## Development Status
+### Compatibility
 
-**Status: Planning / Proof of Concept**
+Initial target: **World of Warcraft 3.3.5a (Build 12340)**.
 
-TranEverything is not yet available for general use. Features, architecture, and compatibility are subject to change as development progresses.
+The first research phase focuses on AceLocale-based addons. Support for additional frameworks and game versions may be added later.
 
-## Community & Contributions
+### Future Plans
 
-The project aims to support an open ecosystem where translators and developers can maintain and distribute their own language packs without needing direct access to the core repository.
+AI-assisted translation is planned as a future feature, after reliable localization framework detection, language resource integration, and rollback mechanisms have been established.
 
-Contribution guidelines and language pack specifications will be published as the project develops.
+### Community
 
-## License
+Developers and translators will be able to maintain independent language pack repositories without joining the core development team.
 
-License information will be added before the first public release.
+Community contribution guidelines and subscription specifications will be published as development progresses.
+
+---
+
+## 简体中文
+
+### 项目介绍
+
+TranEverything 是一个开源的《魔兽世界》插件多语言适配项目，目标是在**不修改其他插件原始文件**的前提下，为不同语言的玩家提供更灵活的插件本地化支持。
+
+项目优先利用插件已经内置的多语言资源，并逐步建立独立语言包、兼容性适配器和第三方 GitHub 语言包订阅生态。
+
+**当前状态：项目规划与技术可行性验证阶段**
+
+### 核心目标
+
+- **已有语言激活** — 调用兼容插件已经包含的中文及其他语言资源。
+- **非侵入式设计** — 不修改其他插件的原始 Lua、XML 和 TOC 文件。
+- **逐插件语言配置** — 在技术允许的情况下，独立设置不同插件的目标语言。
+- **模块化语言包** — 将翻译资源与适配规则独立存放，便于维护和更新。
+- **第三方订阅** — 支持通过 GitHub 仓库订阅社区开发者维护的语言包。
+- **诊断与日志** — 提供兼容性检查、错误记录和问题定位功能。
+- **低性能开销** — 优先采用加载阶段的语言适配机制，尽可能减少运行时性能损耗。
+
+### 兼容性计划
+
+首个目标版本：**魔兽世界 3.3.5a（Build 12340）**。
+
+第一阶段重点研究基于 AceLocale 的插件，未来根据验证结果逐步扩展其他本地化框架和游戏版本。
+
+### 后续规划
+
+未来计划加入 AI 辅助翻译功能。
+
+但只有在插件本地化框架识别、语言资源补全、兼容性验证和安全恢复机制成熟后，才会正式开发 AI 翻译模块。
+
+### 开源社区
+
+TranEverything 希望建立开放的语言包生态。
+
+第三方开发者和翻译贡献者可以通过自己的 GitHub 仓库独立发布、维护和更新语言资源，无需直接加入核心项目开发团队。
+
+后续将公布语言包格式、订阅协议及贡献指南。
+
+---
+
+## Development Status / 开发状态
+
+**Early Development — No Public Release Yet**
+
+**项目处于早期阶段，暂无正式可用版本。**
+
+Features and compatibility are subject to change during development.
+
+项目功能与兼容范围将根据实际技术验证结果逐步确定。
 
 ---
 
 *Translate more. Modify less.*
+
+*让翻译更自由，让修改更少。*
